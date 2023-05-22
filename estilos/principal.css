@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  color: #10069f;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*font-family: 'Permanent Marker', cursive;*/
+
+/* edición del fondo */
+
+.fondo {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/imagenes/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.logo {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 7%;
+  z-index: 100;
+}
+
+.letras-todos {
+  position: absolute;
+  width: 20%;
+  z-index: 100;
+}
+
+/* header  */
+.contenedor-head {
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(238, 238, 238, 0.8);
+  padding-bottom: 1px;
+}
+
+.alcalde {
+  width: auto;
+
+}
+
+.alcalde img {
+  width: 100%;
+}
+
+.titulo {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.titulo img {
+  width: 100%;
+}
+
+ nav{
+  padding: 0 20px 0 20px; 
+ }
+/* main*/
+
+main { 
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(238, 238, 238, 0.8);
+
+  /*box-shadow: -2px 1px 7px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+/*footer*/
+
+footer {
+  width: 960px;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  font-family: var(--monserrat);
+  padding-top: 20px;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: auto;
+  height: 75px;
+  margin-bottom: 5px;
+}
+
+.f-apellidos {
+  font-family: var(--Permanent-Marker);
+  font-size: 0.9rem;
+}
+
+
+/******************************************************************************************************************/
+@media screen and (max-width:640px) {
+
+  .letras-todos {
+    width: 28%;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .contenedor-head{
+    width: auto;
+  }
+  .alcalde {
+    width: auto;
+  }
+
+  .titulo{
+    width: auto;
+  }
+
+  main {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+footer{
+  width: auto;
+}
+ 
+}
+
+@media screen and (min-width:320px) and (max-width:480px) and (orientation: horizontal)  {
+ 
+  .letras-todos {
+    width: 28%;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .contenedor-head{
+    width: auto;
+  }
+  .alcalde {
+    width: auto;
+  }
+
+  .titulo{
+    width: auto;
+  }
+
+  main {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+footer{
+  width: auto;
+}
+
+}
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+
+}

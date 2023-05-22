@@ -1,0 +1,76 @@
+.topnav {
+  overflow: hidden;
+/*  display: flex;
+  justify-content: center;*/
+}
+
+.anchor{
+  text-align: center;
+}
+.topnav a {
+  float:left;
+  display: block;
+ /* color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  */
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.a{
+  width: 300px;
+  text-align: center;
+
+}
+
+a img {
+  width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+  .a{
+   margin: 40px;
+  
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+ 
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+}

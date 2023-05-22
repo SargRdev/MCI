@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atención al Vecino</title>
+  <link rel="icon" href="imagenes/ESCUDO_MUNI.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="pagina2/navegador-copia.css">
+  <link rel="stylesheet" href="estilos/slide.css">
+  <link rel="stylesheet" href="estilos/plantilla.css">
+  <link rel="stylesheet" href="pagina2/main.css">
+</head>
+
+<body class="fondo">
+
+  <header class="contenedor-head">
+    <img src="imagenes/logo-muni.png" alt="Logo-Muni" class="logo">
+    <img src="imagenes/somosMuniGuate-Logo.png" alt="letras-todos-somos" class="letras-todos">
+    <div class="alcalde">
+      <img src="imagenes/foto-alcalde.jpg" alt="alcalde" />
+    </div>
+    <div class="titulo">
+      <h2><img src="imagenes/TITULO.png" alt="titulo"></h2>
+    </div>
+    <nav class="topnav" id="myTopnav">
+      <div class="anchor">
+        <div></div>
+        <a class="a" href="index.html"><img src="imagenes/botones-nav/btn-quienes-somos.png"
+            alt="btn-quienes-somos"></a>
+        <a class="a" href="index2.html"><img src="imagenes/botones-nav/btn-mi-manual.png" alt="btn-mi-manual"></a>
+        <a class="a" href="contacto.html"><img src="imagenes/botones-nav/btn-contacto.png" alt="btn-contacto"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="seccion-quienes-somos" id="quienes-somos">
+      <div class="body">
+        <div class="container-all">
+          <input type="radio" id="1" name="image-slide" hidden>
+          <input type="radio" id="2" name="image-slide" hidden>
+          <input type="radio" id="3" name="image-slide" hidden>
+          <input type="radio" id="4" name="image-slide" hidden>
+          <div class="slide">
+
+            <div class="item-slide">
+              <img src="../imagenes/FOTOS-CARRUSEL/alamos.jpg" alt="">
+            </div>
+            <div class="item-slide">
+              <img src="../imagenes/FOTOS-CARRUSEL/call-center.jpg" alt="">
+            </div>
+
+            <div class="item-slide">
+              <img src="../imagenes/FOTOS-CARRUSEL/informacion.jpg" alt="">
+            </div>
+            <div class="item-slide">
+              <img src="../imagenes/FOTOS-CARRUSEL/cei.jpg" alt="">
+            </div>
+          </div>
+          <div class="pagination">
+            <label for="1" class="pagination-item">
+              <img src="../imagenes/FOTOS-CARRUSEL/alamos.jpg" alt="">
+            </label>
+            <label for="2" class="pagination-item">
+              <img src="../imagenes/FOTOS-CARRUSEL/call-center.jpg" alt="">
+            </label>
+            <label for="3" class="pagination-item">
+              <img src="../imagenes/FOTOS-CARRUSEL/informacion.jpg" alt="">
+            </label>
+            <label for="4" class="pagination-item">
+              <img src="../imagenes/FOTOS-CARRUSEL/cei.jpg" alt="">
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="texto-quienes-somos">
+        <h3>¿Quiénes somos?</h3>
+
+        <p>
+          Somos una dirección entregada a los vecinos, nuestra vocación es <strong>servir</strong>.
+        </p>
+
+        <div class="imagen-quienes-somos">
+          <img src="imagenes/imagen-quienes.png" alt="imagen quienes somos">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="seccion-manuales" id="manual">
+
+      <div class="texto-manuales">
+
+        <h3>Mi Manual</h3>
+
+        <p>Con este manual queremos que conozcas y vivas la cultura de Servicio MuniGuate, para que todos
+          brindemos un servicio y una atención de calidad.
+        </p>
+        <p><strong>Cada momento que los vecinos tengan contacto contigo cuenta y mucho.</strong>
+        </p>
+
+        <div class="recuerda">
+          <img src="imagenes/RECUERDA.png" alt="imagen recuerda">
+        </div>
+      </div>
+
+      <div class="imagenes-manual" id="contenedor-manuales">
+        <!--contenedor de imagenes de manuales-->
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+  <footer>
+
+
+    <img src="imagenes/ESCUDO_MUNI.png" alt="escudo-Muni">
+    <p>Copyright &copy; 2023 | <strong class="f-apellidos">Robles-Ordóñez</strong></p>
+
+  </footer>
+
+  <script src="funciones/funciones.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
