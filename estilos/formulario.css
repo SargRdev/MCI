@@ -1,16 +1,17 @@
 /*formulario */
 .contenedor-contactanos {
   width: 960px;
-  font-family: var(--Permanent-Marker);
   margin: 0 auto;
   padding: 50px 0 0 0;
 }
 
 form {
   margin: 70px 25%;
+  
 }
 
 .div-contacto p {
+  font-family: var(--Permanent-Marker);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -28,6 +29,7 @@ form legend {
   display: block;
   font-size: 1.2rem;
   margin: 0 0 10px;
+  font-family: var(--Permanent-Marker);
 }
 
 form legend {
@@ -38,6 +40,7 @@ input,
 textarea {
   font-size: 1.2rem;
   border: none;
+  font-family: var(--Permanent-Marker);
 }
 
 .cambio-color {
@@ -51,7 +54,7 @@ textarea {
 
 .input-padron {
   display: block;
-  margin: 0 0 20px;
+  margin-right:35px;
   padding: 10px 25px;
   width: 470px;
 }
@@ -81,6 +84,21 @@ textarea {
 .btnEnviar:hover {
   background-color: #72a105;
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px){
+  .contenedor-contactanos {
+    width: auto;
+  }
+
+  form {
+    margin: 70px 5%;
+  }
+
+  .input-padron {
+    display: block;
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -113,6 +131,7 @@ textarea {
 
   .input-padron {
     padding: 12px 0px;
+    margin-right: 0;
     width: 100%;
   }
 
@@ -128,54 +147,8 @@ textarea {
 
 }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px){
 
    
-
-
-    /*formulario*/
-/*
-    .contenedor-contactanos {
-      width: auto;
-      align-content: justify;
-    }
-
-    form {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    .div-contacto h2 {
-      margin: auto;
-      padding: 0 0 50px 50px;
-    }
-
-    form label,
-    form legend {
-      font-size: 1.5rem;
-    }
-
-    .input-padron {
-      padding: 12px 0px;
-      width: 100%;
-    }
-
-    textarea {
-      width: 100%;
-    }
-
-    input::placeholder {
-      font-size: 1.3em;
-      font-style: italic;
-      padding-left: 10px;
-    }
-    */
-
-    .final-form p{
-      text-align: justify;
-      float: left;
-      font-size: 1.2rem;
-   }
-
   }
 
