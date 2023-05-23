@@ -187,6 +187,16 @@ footer strong {
 }
 
 @media screen and (min-width: 1024px) {
+   
+header{
+  width: 960px;
+  margin:0 auto;
+}
+
+  main{
+    width: 960px;
+    margin:0 auto;
+  }
 
   .imagen-quienes-somos img {
     width: 45%;
