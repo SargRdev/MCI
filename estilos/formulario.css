@@ -54,9 +54,8 @@ textarea {
 
 .input-padron {
   display: block;
-  margin-right:35px;
   padding: 10px 25px;
-  width: 470px;
+  width: 100%;
 }
 
 .label-checkbox {
@@ -91,64 +90,37 @@ textarea {
     width: auto;
   }
 
-  form {
-    margin: 70px 5%;
+  .div-contacto p {
+    font-size: 1.3rem;
   }
 
-  .input-padron {
+
+  form {
+    margin: 70px 2%;
+  }
+
+
+.input-padron {
     display: block;
-    width: 600px;
   }
 }
 
 @media screen and (max-width: 640px) {
   /*formulario*/
 
-  .contenedor-contactanos {
-    width: auto;
-  }
 
   .div-contacto p {
-    text-align: justify;
-    padding: 0 30px 0 30px;
+font-size: 1.2rem;
   }
-
-  form {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 50px;
-  }
-
-  .div-contacto h2 {
-    margin: auto;
-    padding: 0 0 50px 50px;
-  }
-
-  form label,
-  form legend {
-    font-size: 1.3rem;
-  }
-
-  .input-padron {
-    padding: 12px 0px;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  textarea {
-    width: 100%;
-  }
-
-  input::placeholder {
-    font-size: 1.3em;
-    font-style: italic;
-    padding-left: 10px;
-  }
-
 }
 
-  @media screen and (min-width: 320px){
+  @media screen and (max-width: 320px){
 
-   
+    .div-contacto p {
+      font-size: 1rem;
+        }
+
+        form{
+          margin: 50px 2% 0 2%;
+        }
   }
-
