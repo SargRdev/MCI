@@ -1,75 +1,76 @@
-#nav {
-  /* container */
+.topnav {
+  overflow: hidden;
 }
 
-#nav > a {
-  display: none;
+.anchor {
+  text-align: center;
 }
-
-#nav li {
-  position: relative;
-}
-
-/* first level */
-
-#nav > ul {
-  height: 3.75em;
-}
-
-#nav > ul > li {
-  width: 25%;
-  height: 100%;
+.topnav a {
   float: left;
-}
-
-/* second level */
-
-#nav li ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-}
-
-#nav li:hover ul {
   display: block;
 }
 
-@media only screen and (max-width: 40em) /* 640 */ {
-  #nav {
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+a {
+  text-align: center;
+}
+
+a img {
+  width: 60%;
+}
+
+@media screen and (max-width: 640px) {
+  i {
+    margin-right: 30px;
+  }
+  a img {
+    width: 30%;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .topnav.responsive {
     position: relative;
   }
 
-  #nav > a {
-    /* ... */
-  }
-
-  #nav:not(:target) > a:first-of-type,
-  #nav:target > a:last-of-type {
-    display: block;
-  }
-
-  /* first level */
-
-  #nav > ul {
-    height: auto;
-    display: none;
+  .topnav.responsive .icon {
     position: absolute;
-    left: 0;
     right: 0;
+    top: 0;
   }
-  
-  #nav:target > ul {
+
+  .topnav.responsive a {
+    float: none;
     display: block;
   }
-  
-  #nav > ul > li {
-    width: 100%;
-    float: none;
+}
+
+@media screen and (max-width: 768px) {
+  a{
+    width: 30%;
   }
-
-  /* second level */
-
-  #nav li ul {
-    position: static;
+  a img {
+    width: 60%;
   }
 }

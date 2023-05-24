@@ -35,9 +35,9 @@ function iniciar() {
 
     opcionManuales = `<div class="imagenes">
         <a href="${manual.url}">
-          <button>
+        
             <img src="${manual.foto}" alt="${manual.nombre}"/>
-          </button>
+    
         </a>
       </div>`
 

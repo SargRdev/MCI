@@ -122,6 +122,10 @@ footer strong {
   font-size: 0.7rem;
 }
 
+iframe{
+  height: 50vh;
+}
+
 @media screen and (min-width: 640px) {
   .container-all {
     width: auto;
@@ -185,6 +189,10 @@ footer strong {
     height: 4.9rem;
   }
 }
+iframe{
+  height: 70vh;
+}
+
 
 @media screen and (min-width: 1024px) {
    
@@ -209,4 +217,5 @@ header{
   .imagenes img {
     height: 6.5rem;
   }
+  
 }

@@ -26,30 +26,17 @@
     <div class="titulo">
       <h2><img src="imagenes/TITULO.png" alt="titulo"></h2>
     </div>
-    <nav id="nav" role="navigation">
-      <a href="#nav" title="Show navigation">Show navigation</a>
-      <a href="#" title="Hide navigation">Hide navigation</a>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li>
-          <a href="/" aria-haspopup="true">Blog</a>
-          <ul>
-            <li><a href="/">Design</a></li>
-            <li><a href="/">HTML</a></li>
-            <li><a href="/">CSS</a></li>
-            <li><a href="/">JavaScript</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/" aria-haspopup="true">Work</a>
-          <ul>
-            <li><a href="/">Web Design</a></li>
-            <li><a href="/">Typography</a></li>
-            <li><a href="/">Front-End</a></li>
-          </ul>
-        </li>
-        <li><a href="/">About</a></li>
-      </ul>
+    <nav class="topnav" id="myTopnav">
+      <div></div>
+      <a href="#quienes-somos"><img src="imagenes/botones-nav/btn-quienes-somos.png" alt="btn-quienes-somos"></a>
+      
+      <a href="#manual"><img src="imagenes/botones-nav/btn-mi-manual.png" alt="btn-mi-manual"></a>
+      <a href="contacto.html"><img src="imagenes/botones-nav/btn-contacto.png" alt="btn-contacto"></a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
     </nav>
   </header>
 
@@ -138,7 +125,18 @@
     <img src="imagenes/ESCUDO_MUNI.png" alt="escudo-Muni">
     <p>Copyright &copy; 2023 | <strong class="f-apellidos">Robles-Ordóñez</strong></p>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   <script src="funciones/funciones.js"></script>
+
 </body>
 
 </html>
