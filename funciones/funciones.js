@@ -13,7 +13,7 @@ function iniciar() {
   }
 
 
-  let completo = new manual('completo', 'manual.html','imagenes/PORTADA.jpg');
+  let completo = new manual('completo', 'manual.html', 'imagenes/PORTADA.jpg');
   let primera = new manual('primera', 'https://heyzine.com/flip-book/8bff3511a4.html', 'imagenes/AMARILLO.jpg');
   let segunda = new manual('segunda', 'https://heyzine.com/flip-book/b925ceca84.html', 'imagenes/TURQUESA.jpg');
   let tercera = new manual('tercera', 'https://heyzine.com/flip-book/ce4546a8db.html', 'imagenes/MORADO1.jpg');
@@ -25,8 +25,8 @@ function iniciar() {
   let novena = new manual('novena', 'https://heyzine.com/flip-book/1796be0bcc.html', 'imagenes/AZUL.jpg');
   let decima = new manual('decima', 'https://heyzine.com/flip-book/1796be0bcc.html', 'imagenes/VERDE.jpg');
   let onceava = new manual('onceava', 'https://heyzine.com/flip-book/1796be0bcc.html', 'imagenes/ANARANJADO.jpg');
-  
-  
+
+
   manuales.push(completo, primera, segunda, tercera, cuarta, quinta, sexta, septima, octava, novena, decima, onceava);
 
 

@@ -135,7 +135,6 @@ footer{
 }
 
 @media screen and (min-width:320px) and (max-width:480px) and (orientation: horizontal)  {
- 
   .letras-todos {
     width: 28%;
   }
