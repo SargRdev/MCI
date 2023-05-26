@@ -95,7 +95,7 @@ main {
 }
 
 .imagenes a{
-display: block;
+display: inline-block;
 }
 
 button {
