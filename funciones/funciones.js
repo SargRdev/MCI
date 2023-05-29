@@ -34,9 +34,9 @@ function iniciar() {
   manuales.forEach((manual) => {
 
     opcionManuales = `<div class="imagenes">
-        <a href="${manual.url}">
+    <button> <a href="${manual.url}">
             <img src="${manual.foto}" alt="${manual.nombre}"/>
-        </a>
+        </a></button>
       </div>`
 
     contenedorManuales.innerHTML += opcionManuales;
