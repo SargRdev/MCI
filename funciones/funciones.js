@@ -4,6 +4,12 @@ function iniciar() {
   let opcionManuales;
   let contenedorManuales = document.getElementById('contenedor-manuales');
 
+
+  let fotos = [];
+  let carruselFotos;
+  let ContenedorFotos = document.getElementsByClassName('container-all');
+  
+  
   class manual {
     constructor(nombre, url, foto) {
       this.nombre = nombre;
@@ -34,7 +40,7 @@ function iniciar() {
   manuales.forEach((manual) => {
 
     opcionManuales = `<div class="imagenes">
-    <button> <a href="${manual.url}">
+    <button class = btn> <a href="${manual.url}">
             <img src="${manual.foto}" alt="${manual.nombre}"/>
         </a></button>
       </div>`
@@ -42,6 +48,19 @@ function iniciar() {
     contenedorManuales.innerHTML += opcionManuales;
 
   });
+
+
+  class carrusel {
+
+    constructor(url, nombre) {
+      this.url = url;
+      this.nombre = nombre;
+    }
+
+
+
+  }
+
 
 }
 

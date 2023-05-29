@@ -107,7 +107,7 @@ gap: 10px;
   height: 4.7rem;
 }
 
-button {
+.btn{
   height: 100%;
   width: 100%;
   border: none;
@@ -115,7 +115,7 @@ button {
   transition: 500ms all;
 }
 
-button:hover {
+.btn:hover {
   transform: scale(1.2);
   opacity: 0.7;
 }
