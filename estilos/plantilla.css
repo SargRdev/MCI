@@ -45,7 +45,7 @@ header {
   margin-top: 10px;
   background: linear-gradient(rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.6)), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat center fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 .logo {
@@ -159,8 +159,6 @@ footer strong {
   }
 */
 
-
-
   .texto-quienes-somos,
   .texto-manuales {
     line-height: 2;
@@ -201,10 +199,7 @@ footer strong {
     height: auto;
   }
 
-  #navbarNavDropdown {
-    background-size: cover;
-  }
-
+ 
   .texto-quienes-somos {
     width: 40%;
     padding-left: 15px;
@@ -275,7 +270,6 @@ footer strong {
     margin-top: 10px;
     background: none;
   }
-
 
   main {
     width: 960px;
