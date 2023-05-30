@@ -5,11 +5,8 @@ function iniciar() {
   let contenedorManuales = document.getElementById('contenedor-manuales');
 
 
-  let fotos = [];
-  let carruselFotos;
-  let ContenedorFotos = document.getElementsByClassName('container-all');
-  
-  
+
+
   class manual {
     constructor(nombre, url, foto) {
       this.nombre = nombre;
@@ -50,20 +47,15 @@ function iniciar() {
   });
 
 
-  class carrusel {
-
-    constructor(url, nombre) {
-      this.url = url;
-      this.nombre = nombre;
-    }
-
-
-
-  }
-
-
 }
 
 
 
+
+
+
 window.addEventListener('load', iniciar);
+
+
+
+
