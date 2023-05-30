@@ -33,6 +33,11 @@ header {
   background: rgba(238, 238, 238, 0.8);
 }
 
+
+#nav{
+  padding-top: 0;
+  margin-bottom: 10px;
+}
 .bg-light {
   --bs-bg-opacity: 0;
 }
@@ -188,6 +193,7 @@ footer strong {
 }
 
 @media screen and (min-width: 768px) {
+  
   .seccion-quienes-somos {
     display: flex;
   }
