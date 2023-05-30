@@ -35,15 +35,22 @@ header {
   background: rgba(238, 238, 238, 0.8);
 }
 
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
 .topnav {
   padding-bottom: 20px;
 }
 
-#nav-fondo{
+#navbarNavDropdown{
+margin-top: 10px;
   background: linear-gradient(
         rgba(255, 255, 255,0.6),
         rgba(255, 255, 255,0.6)
-      ), url(/imagenes/FONDO-MUÑECOS.jpg);
+      ), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat center center fixed;
+      background-size: cover;
 }
 
 .logo {
@@ -264,6 +271,11 @@ header{
   margin:0 auto;
 }
 
+#navbarNavDropdown{
+  margin-top: 10px;
+    background: none;
+  }
+  
 
   main{
     width: 960px;
