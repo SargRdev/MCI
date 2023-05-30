@@ -22,10 +22,8 @@ body {
     "header"
     "main"
     "footer";
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
+  background: linear-gradient(rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
     url(/imagenes/background.png) no-repeat center center fixed;
   background-size: cover;
 }
@@ -37,20 +35,17 @@ header {
 
 .bg-light {
   --bs-bg-opacity: 0;
-  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
 
 .topnav {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-#navbarNavDropdown{
-margin-top: 10px;
-  background: linear-gradient(
-        rgba(255, 255, 255,0.6),
-        rgba(255, 255, 255,0.6)
-      ), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat center center fixed;
-      background-size: cover;
+#navbarNavDropdown {
+  margin-top: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat fixed;
+  background-size: cover;
 }
 
 .logo {
@@ -97,9 +92,9 @@ main {
 }
 
 .imagenes-manual {
-display:grid;
-grid-template-columns: repeat(3,1fr);
-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   /*
   display: flex;
   flex-wrap: wrap;
@@ -108,9 +103,9 @@ gap: 10px;
   */
 }
 
-.imagenes a{
+.imagenes a {
   display: block;
-  }
+}
 
 .imagenes {
   width: auto;
@@ -121,7 +116,7 @@ gap: 10px;
   height: 4.7rem;
 }
 
-.btn{
+.btn {
   width: 100%;
   border: none;
   cursor: pointer;
@@ -153,19 +148,19 @@ footer strong {
   font-size: 0.7rem;
 }
 
-.flipbook{
+.flipbook {
   width: 100%;
 }
 
 @media screen and (min-width: 640px) {
- /* .container-all {
+  /* .container-all {
     width: auto;
     height: 100vh;
   }
 */
 
 
-  
+
   .texto-quienes-somos,
   .texto-manuales {
     line-height: 2;
@@ -176,17 +171,17 @@ footer strong {
   }
 
   .imagenes-manual {
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-  
-      /*
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    /*
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
       */
-    }
-    
+  }
+
   .imagenes img {
     width: 100%;
     height: 6.6rem;
@@ -214,6 +209,7 @@ footer strong {
   .imagen-quienes-somos img {
     width: 35%;
   }
+
   .seccion-manuales {
     display: flex;
     margin-top: 40px;
@@ -224,18 +220,18 @@ footer strong {
   }
 
   .imagenes-manual {
-    display:grid;
+    display: grid;
     padding-left: 10px;
-    grid-template-columns: repeat(3,1fr);
-    gap:5px;
-  
-      /*
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    /*
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
       */
-    }
+  }
 
 
   .imagenes img {
@@ -244,42 +240,42 @@ footer strong {
 }
 
 @media screen and (min-width: 896px) {
-  header{
+  header {
     width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  
-    main{
-      width: 960px;
-      margin:0 auto;
-    }
-  
-    .imagen-quienes-somos img {
-      width: 45%;
-    }
-  
-    .imagenes-manual {
-      width: 480px;
-      height: 500px;
-    }
+
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .imagen-quienes-somos img {
+    width: 45%;
+  }
+
+  .imagenes-manual {
+    width: 480px;
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-   
-header{
-  width: 960px;
-  margin:0 auto;
-}
 
-#navbarNavDropdown{
-  margin-top: 10px;
+  header {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  #navbarNavDropdown {
+    margin-top: 10px;
     background: none;
   }
-  
 
-  main{
+
+  main {
     width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .imagen-quienes-somos img {
