@@ -43,9 +43,9 @@ header {
 
 #navbarNavDropdown {
   margin-top: 10px;
-  background: linear-gradient(rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat fixed;
-  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.6)), url(/imagenes/FONDO-MUÑECOS.jpg) no-repeat center fixed;
+  background-size: contain;
 }
 
 .logo {
@@ -199,6 +199,10 @@ footer strong {
 
   .container-all {
     height: auto;
+  }
+
+  #navbarNavDropdown {
+    background-size: cover;
   }
 
   .texto-quienes-somos {
