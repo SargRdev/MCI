@@ -62,43 +62,44 @@
     <section class="contenedor-contactanos">
       <div class="div-contacto">
 
-        <p>Si tienes comentarios, quieres más información del manual</p>
-        <p>o una capacitación para tu equipo déjanos tus datos: </p>
+        <p>Si tienes comentarios, quieres más información del manual o una capacitación para tu equipo déjanos tus
+          datos: </p>
 
         <form action="https://formsubmit.co/robles.alexander23@gmail.com" method="POST">
 
-          <label class="cambio-color" for="nombre">Nombre:</label>
+          <label class="cambio-color" for="nombre">¿Cómo te llamas? <p id="completo">(nombre completo)</p></label>
           <input type="text" id="nombre" name="txtnombre" class="input-padron" required>
 
-          <label for="apellido">Apellidos:</label>
-          <input type="text" id="apellido" name="txtApellido" class="input-padron" required>
 
           <label class="cambio-color" for="select-Ubicacion">¿Donde Trabajas?</label>
-          <select name="selectUbicacion" id="select-Ubicacion" class="input-padron" >
-            <option >Selecciona...</option>
+          <select name="selectUbicacion" id="select-Ubicacion" class="input-padron" required>
+            <option>Selecciona...</option>
           </select>
 
-          <label for="select-Dependencia" id="label-Depen">Dependencia:</label>
+          <label for="select-Dependencia" class="cambio-color" id="label-Depen">Dependencia:</label>
           <select name="selectDependencia" id="select-Dependencia" class="input-padron" required>
             <option selected>Selecciona...</option>
           </select>
 
           <fieldset>
-            <legend>¿Qué prefieres? </legend>
-            <label for="radio-telefono">
-              <input type="radio" name="contactado-por" id="radio-telefono" value="telefono" onclick="selectRadio()">
-              ¿Te llamamos?
-            </label>
+            <legend class="cambio-color">¿Qué prefieres?</legend>
+            <div class="tab">
+              <label for="radio-telefono">
+                <input type="radio" name="contactado-por" id="radio-telefono" value="telefono" onclick="selectRadio()">
+                ¿Te llamamos?
+              </label>
 
-            <label for="radio-whatsapp">
-              <input type="radio" name="contactado-por" id="radio-whatsapp" value="Whatsapp" onclick="selectRadio()">
-              ¿Te whatsappeamos?
-            </label>
+              <label for="radio-whatsapp">
+                <input type="radio" name="contactado-por" id="radio-whatsapp" value="Whatsapp" onclick="selectRadio()">
+                ¿Te whatsappeamos?
+              </label>
 
-            <label for="radio-email">
-              <input type="radio" name="contactado-por" id="radio-email" value="email" onclick="selectRadio()"> ¿O
-              quieres un mail?
-            </label>
+              <label for="radio-email">
+                <input type="radio" name="contactado-por" id="radio-email" value="email" onclick="selectRadio()"> ¿O
+                quieres un mail?
+              </label>
+
+            </div>
 
           </fieldset>
 
@@ -112,7 +113,7 @@
             <input type="email" id="email" name="txtEmail" placeholder="email@dominio.com" class="input-padron">
           </div>
 
-          <label for="area">Mensaje:</label>
+          <label for="area" class="cambio-color">Mensaje:</label>
           <textarea name="txtArea" id="area" cols="61" rows="5"></textarea>
           <!--
           <label class="label-checkbox" for="material">

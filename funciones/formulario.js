@@ -23,7 +23,7 @@ function selectRadio() {
     }
 }
 
-let ubicaciones = ["Municipalidad", "EMETRA", "EMPAGUA"];
+let ubicaciones = ["Municipalidad de Guatemala", "Emetra", "Empagua"];
 let dependencias = ["Selecciona...","Atención al Vecino", "Catastro", "Desarrollo Social", "Informática", "Obras", "EMETRA", "EMPAGUA"];
 
 let selectUbicaciones = document.getElementById('select-Ubicacion');
@@ -52,17 +52,17 @@ selectUbicaciones.addEventListener('change', (e) => {
     let dato = e.target.value
 
     switch (dato) {
-        case 'Municipalidad':
+        case 'Municipalidad de Guatemala':
             recorrer(selectDependencias, dependencias.slice(0, 5));
             selectDependencias.style.display='BLOCK'
             label_dependencia.style.display='BLOCK'
             break;
-        case 'EMETRA':
+        case 'Emetra':
             recorrer(selectDependencias, dependencias.slice(6, 7));
             label_dependencia.style.display='NONE'
             selectDependencias.style.display='NONE'
             break;
-        case 'EMPAGUA':
+        case 'Empagua':
             recorrer(selectDependencias, dependencias.slice(7, 8));
             label_dependencia.style.display='NONE'
             selectDependencias.style.display='NONE'
