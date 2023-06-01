@@ -7,7 +7,7 @@
 
 form {
   margin: 70px 25%;
-  
+
 }
 
 .div-contacto p {
@@ -20,8 +20,9 @@ fieldset {
   border-style: none;
 }
 
-#tele, #mail{
-  margin-top:15px;
+#tele,
+#mail {
+  margin-top: 15px;
 }
 
 form label,
@@ -50,12 +51,21 @@ textarea {
 
 textarea {
   width: 100%;
+  resize: none;
 }
 
 .input-padron {
   display: block;
   padding: 10px 25px;
   width: 100%;
+  border: none;
+}
+
+#select-Ubicacion,
+#select-Ubicacion option,
+#select-Dependencia,
+#select-Dependencia option {
+  font-family: var(--Permanent-Marker);
 }
 
 .label-checkbox {
@@ -85,7 +95,7 @@ textarea {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .contenedor-contactanos {
     width: auto;
   }
@@ -98,7 +108,7 @@ textarea {
     margin: 70px 2%;
   }
 
-.input-padron {
+  .input-padron {
     display: block;
   }
 }
@@ -108,17 +118,17 @@ textarea {
 
 
   .div-contacto p {
-font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
-  @media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
-    .div-contacto p {
-      font-size: 1rem;
-        }
-
-        form{
-          margin: 50px 2% 0 2%;
-        }
+  .div-contacto p {
+    font-size: 1rem;
   }
+
+  form {
+    margin: 50px 2% 0 2%;
+  }
+}

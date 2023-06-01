@@ -73,10 +73,16 @@
           <label for="apellido">Apellidos:</label>
           <input type="text" id="apellido" name="txtApellido" class="input-padron" required>
 
-          <label class="cambio-color" for="selectDependencia">Dependencia:</label>
-          <select name="selectDependencia" id="selectDependencia">
-            <option value="value1">Value 1</option>
+          <label class="cambio-color" for="select-Ubicacion">¿Donde Trabajas?</label>
+          <select name="selectUbicacion" id="select-Ubicacion" class="input-padron" >
+            <option >Selecciona...</option>
           </select>
+
+          <label for="select-Dependencia" id="label-Depen">Dependencia:</label>
+          <select name="selectDependencia" id="select-Dependencia" class="input-padron" required>
+            <option selected>Selecciona...</option>
+          </select>
+
           <fieldset>
             <legend>¿Qué prefieres? </legend>
             <label for="radio-telefono">
@@ -98,7 +104,7 @@
 
           <div id="tele">
             <label class="cambio-color" for="tel">Teléfono:</label>
-            <input type="tel" id="tel" name="txtTel" placeholder="XXXXXXXX" class="input-padron">
+            <input type="tel" id="tel" name="txtTel" placeholder="12345678" class="input-padron">
           </div>
 
           <div id="mail">
