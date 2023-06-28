@@ -17,7 +17,7 @@ function iniciar() {
 
 
   let completo = new manual('completo', 'manual.html', 'imagenes/PORTADA.jpg');
-  let primera = new manual('primera', 'https://heyzine.com/flip-book/8bff3511a4.html', 'imagenes/AMARILLO.jpg');
+  let primera = new manual('primera', 'manual.html', 'imagenes/AMARILLO.jpg');
   let segunda = new manual('segunda', 'https://heyzine.com/flip-book/b925ceca84.html', 'imagenes/TURQUESA.jpg');
   let tercera = new manual('tercera', 'https://heyzine.com/flip-book/ce4546a8db.html', 'imagenes/MORADO1.jpg');
   let cuarta = new manual('cuarta', 'https://heyzine.com/flip-book/c174c4f4a0.html', 'imagenes/MORADO2.jpg');
@@ -48,6 +48,8 @@ function iniciar() {
 
 
 }
+
+
 
 
 
