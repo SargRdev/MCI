@@ -24,14 +24,14 @@ function selectRadio() {
 }
 
 let ubicaciones = ["Municipalidad de Guatemala", "Emetra", "Empagua"];
-let dependencias = ["Selecciona...","Atención al Vecino", "Catastro", "Desarrollo Social", "Informática", "Obras", "EMETRA", "EMPAGUA"];
+let dependencias = ["Selecciona...", "Atención al Vecino", "Catastro", "Desarrollo Social", "Informática", "Obras", "EMETRA", "EMPAGUA"];
 
 let selectUbicaciones = document.getElementById('select-Ubicacion');
 let selectDependencias = document.getElementById('select-Dependencia')
 let label_dependencia = document.getElementById('label-Depen')
 
-selectDependencias.style.display='NONE'
-label_dependencia.style.display='NONE'
+selectDependencias.style.display = 'NONE'
+label_dependencia.style.display = 'NONE'
 
 function recorrer(depen, valores) {
     selectDependencias.innerHTML = '';
@@ -54,23 +54,23 @@ selectUbicaciones.addEventListener('change', (e) => {
     switch (dato) {
         case 'Municipalidad de Guatemala':
             recorrer(selectDependencias, dependencias.slice(0, 5));
-            selectDependencias.style.display='BLOCK'
-            label_dependencia.style.display='BLOCK'
+            selectDependencias.style.display = 'BLOCK'
+            label_dependencia.style.display = 'BLOCK'
             break;
         case 'Emetra':
             recorrer(selectDependencias, dependencias.slice(6, 7));
-            label_dependencia.style.display='NONE'
-            selectDependencias.style.display='NONE'
+            label_dependencia.style.display = 'NONE'
+            selectDependencias.style.display = 'NONE'
             break;
         case 'Empagua':
             recorrer(selectDependencias, dependencias.slice(7, 8));
-            label_dependencia.style.display='NONE'
-            selectDependencias.style.display='NONE'
+            label_dependencia.style.display = 'NONE'
+            selectDependencias.style.display = 'NONE'
             break;
 
         default:
-            label_dependencia.style.display='NONE'
-            selectDependencias.style.display='NONE'
+            label_dependencia.style.display = 'NONE'
+            selectDependencias.style.display = 'NONE'
             break;
     }
 
