@@ -1,7 +1,5 @@
-
-
-
 let info = document.getElementById("info")
+let formulario = document.getElementsByTagName("form")
 
 info.addEventListener('click', verificarFormulario)
 
@@ -11,7 +9,7 @@ var campo3 = document.getElementById("select-Dependencia");
 var campo4 = document.getElementById("area");
 
 
-console.log(campo3)
+
 function verificarFormulario() {
     // Obtener referencias a los campos del formulario
 
@@ -19,7 +17,7 @@ function verificarFormulario() {
     if (campo1.value === "" || campo2.value === "Selecciona..." || campo2.value === "" ||
         campo3.value === "Selecciona..." || campo3.value === "" || campo4.value === "") {
 
-        Swal.fire(
+      Swal.fire(
             'Oops...',
             '¡Completa tus datos para contactarte!',
             'warning'
@@ -27,13 +25,13 @@ function verificarFormulario() {
         // Al menos un campo está vacío
         return false; // Evita el envío del formulario
     }
+  
 
     else {
-
         Swal.fire({
             title: '<p>En menos de lo que te imaginas, sabrás de nosotros...</p>',
             text: '',
-            imageUrl: '../imagenes/SITIO WEB HERO-20.png',
+            imageUrl: '../imagenes/SITIO_WEB_HERO-20.png',
             imageWidth: 200,
             imageHeight: 200,
             imageAlt: 'Custom image',
@@ -41,7 +39,7 @@ function verificarFormulario() {
   // Todos los campos están llenos
   return true; // Permite el envío del formulario
     }
-  
+
 }
 
 
