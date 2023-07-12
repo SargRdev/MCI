@@ -17,7 +17,7 @@ function verificarFormulario() {
     if (campo1.value === "" || campo2.value === "Selecciona..." || campo2.value === "" ||
         campo3.value === "Selecciona..." || campo3.value === "" || campo4.value === "") {
 
-      Swal.fire(
+        Swal.fire(
             'Oops...',
             '¡Completa tus datos para contactarte!',
             'warning'
@@ -25,19 +25,21 @@ function verificarFormulario() {
         // Al menos un campo está vacío
         return false; // Evita el envío del formulario
     }
-  
+
 
     else {
         Swal.fire({
-            title: '<p>En menos de lo que te imaginas, sabrás de nosotros...</p>',
-            text: '',
+            position: 'top-center',
+            icon: 'success',
             imageUrl: '../imagenes/SITIO_WEB_HERO-20.png',
             imageWidth: 200,
             imageHeight: 200,
-            imageAlt: 'Custom image',
+            title: '<p>En menos de lo que te imaginas, sabrás de nosotros...</p>',
+            showConfirmButton: false,
+            timer: 4000
         })
-  // Todos los campos están llenos
-  return true; // Permite el envío del formulario
+        // Todos los campos están llenos
+        return true; // Permite el envío del formulario
     }
 
 }
