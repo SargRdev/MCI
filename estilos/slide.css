@@ -121,6 +121,15 @@ input[id="4"]:checked ~ .slide {
 input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     background: #fff;
 }
+
+input[id="5"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
+    background: #fff;
+}
 @keyframes autoplay {
     25%{
         transform: translate3d(calc(-100% * 0),0,0);
@@ -135,4 +144,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     100%{
         transform: translate3d(calc(-100% * 3),0,0);
     }
+/*
+    100%{
+        transform: translate3d(calc(-100% * 4),0,0);
+    }
+    */
 }
