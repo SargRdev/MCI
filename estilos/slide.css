@@ -124,29 +124,62 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
 
 input[id="5"]:checked ~ .slide {
     animation: none;
-    transform: translate3d(calc(-100% * 3), 0, 0);
+    transform: translate3d(calc(-100% * 4), 0, 0);
 }
 
 input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
     background: #fff;
 }
+input[id="6"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked ~ .pagination .pagination-item[for="6"] {
+    background: #fff;
+}
+input[id="7"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 6), 0, 0);
+}
+
+input[id="7"]:checked ~ .pagination .pagination-item[for="7"] {
+    background: #fff;
+}
+
+input[id="8"]:checked ~ .slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 7), 0, 0);
+}
+
+input[id="8"]:checked ~ .pagination .pagination-item[for="8"] {
+    background: #fff;
+}
 @keyframes autoplay {
-    25%{
+    12.5%{
         transform: translate3d(calc(-100% * 0),0,0);
     }
 
-    50%{
+    25%{
         transform: translate3d(calc(-100% * 1),0,0);
     }
-    75%{
+    37.5%{
         transform: translate3d(calc(-100% * 2),0,0);
     }
-    100%{
+    50%{
         transform: translate3d(calc(-100% * 3),0,0);
     }
-/*
-    100%{
+    62.5%{
         transform: translate3d(calc(-100% * 4),0,0);
     }
-    */
+    75%{
+        transform: translate3d(calc(-100% * 5),0,0);
+    }
+    82.5%{
+        transform: translate3d(calc(-100% * 6),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 7),0,0);
+    }
+
 }
