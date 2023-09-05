@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="estilos/slide.css">
   <link rel="stylesheet" href="estilos/plantilla.css">
   <link rel="stylesheet" href="estilos/formulario.css">
- 
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
@@ -69,7 +69,8 @@
         <p>Si tienes comentarios, quieres más información del manual o una capacitación para tu equipo déjanos tus
           datos:</p>
 
-        <form action="https://formsubmit.co/atencionalvecinomuniguate@gmail.com" method="POST">
+        <form action="https://formsubmit.co/atencionalvecinomuniguate@gmail.com" method="POST" 
+         onsubmit="return submitForm(this)">
 
           <label class="cambio-color" for="nombre">¿Cómo te llamas? <p id="completo">(nombre completo)</p></label>
           <input type="text" id="nombre" name="txtnombre" class="input-padron" required>
@@ -125,22 +126,21 @@
             Dirección de Atención al
             Vecino?</label>
 -->
-           <!--<div class="final-form">
+          <!--<div class="final-form">
            <p>En menos de lo que te imaginas </p>
             <p> sabrás de nosotros...</p>
 
             <div class="hero"> 
               <img src="imagenes/SITIO WEB HERO-20.png" alt="" width="100px">
             </div>-->
-          </div>
-          <button id="info" class="btnEnviar">
-            Enviar
-          </button>
-          <input type="hidden" name="_next" value="https://melodious-madeleine-f95172.netlify.app/">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-
-        </form>
+      </div>
+      <button type="submit" id="info" class="btnEnviar" >
+        Enviar
+      </button>
+      <input type="hidden" name="_next" value="https://melodious-madeleine-f95172.netlify.app/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      </form>
       </div>
     </section>
   </main>
@@ -158,6 +158,7 @@
     crossorigin="anonymous"></script>
 
 
-    <script src="/funciones/alert.js"></script>
+  <script src="/funciones/alert.js"></script>
 </body>
+
 </html>

@@ -28,20 +28,38 @@ function verificarFormulario() {
 
 
     else {
-        Swal.fire({
-            position: 'top-center',
-            icon: 'success',
-            imageUrl: '../imagenes/SITIO_WEB_HERO-20.png',
-            imageWidth: 200,
-            imageHeight: 200,
-            title: '<p>En menos de lo que te imaginas, sabrás de nosotros...</p>',
-            showConfirmButton: false,
-            timer: 4000
-        })
-        // Todos los campos están llenos
-        return true; // Permite el envío del formulario
+
+
+        submitForm(form);
+
     }
 
+
 }
+
+
+function submitForm(form) {
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        imageUrl: '../imagenes/SITIO_WEB_HERO-20.png',
+        imageWidth: 200,
+        imageHeight: 200,
+        title: '<p>En menos de lo que te imaginas, sabrás de nosotros...</p>',
+        confirmButtonText: 'Ok',
+   
+    })
+        .then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Enviado!', '', 'success')
+                form.submit();
+            }
+
+        })
+    return false;
+}
+
+
 
 

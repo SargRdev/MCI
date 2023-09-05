@@ -23,8 +23,39 @@ function selectRadio() {
 }
 
 let ubicaciones = ["Municipalidad de Guatemala", "Emetra", "Empagua"];
-let dependencias = ["Selecciona...", "Atención al Vecino", "Catastro", "Desarrollo Social", "Informática", "Obras", "EMETRA", "EMPAGUA"];
+let dependencias = ["Selecciona...", "Dirección de Atención al Vecino", "Dirección de Catastro y Administración del IUSI",
+    "Dirección de Desarrollo Social",
+    "Dirección de Informática",
+    "Dirección de Comunicación Social", "Dirección de Auditoría Interna",
+    "Dirección de Información Geográfica Municipal",
+    "Dirección de Cooperación Internacional",
+    "Dirección de Asuntos Jurídicos",
+    "Dirección de Educación Artistica",
+    "Dirección Financiera",
+    "Dirección de Movilidad Urbana",
+    "Dirección de Recursos Humanos",
+    "Dirección de Obras",
+    "Dirección de la Policia Municipal",
+    "Dirección del Comercio Popular",
+    "Dirección de Control Territorial",
+    "Dirección de Urbanística",
+    "Dirección de Mercados",
+    "Directora de Planificación Municipal",
+    "Dirección de Medio Ambiente",
+    "Dirección de Gestión de Residuos y Desechos",
+    "Dirección Escuela Taller",
+    "Juzgado de Asuntos Municipales",
+    "Dirección de la Oficina Municipal de la Mujer",
+    "Dirección de Salud y Bienestar Municipal",
+    "Dirección de Planificación Urbana",
+    "Dirección Administrativa",
+    "Coordinación de Mancomunidades",
+    "Cuerpo de Bomberos Municipales",
+    "Regencia Norte",
+    "EMETRA", "EMPAGUA"
+];
 
+console.log(dependencias.length)
 let selectUbicaciones = document.getElementById('select-Ubicacion');
 let selectDependencias = document.getElementById('select-Dependencia')
 let label_dependencia = document.getElementById('label-Depen')
@@ -52,17 +83,17 @@ selectUbicaciones.addEventListener('change', (e) => {
 
     switch (dato) {
         case 'Municipalidad de Guatemala':
-            recorrer(selectDependencias, dependencias.slice(0, 5));
+            recorrer(selectDependencias, dependencias.slice(0, 32));
             selectDependencias.style.display = 'BLOCK'
             label_dependencia.style.display = 'BLOCK'
             break;
         case 'Emetra':
-            recorrer(selectDependencias, dependencias.slice(6, 7));
+            recorrer(selectDependencias, dependencias.slice(33, 34));
             label_dependencia.style.display = 'NONE'
             selectDependencias.style.display = 'NONE'
             break;
         case 'Empagua':
-            recorrer(selectDependencias, dependencias.slice(7, 8));
+            recorrer(selectDependencias, dependencias.slice(34, 35));
             label_dependencia.style.display = 'NONE'
             selectDependencias.style.display = 'NONE'
             break;
